@@ -1,0 +1,16 @@
+{
+  "name": "sc_pool_services_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "3.2.5",
+    "sass": "^1.72.0"
+  }
+}
