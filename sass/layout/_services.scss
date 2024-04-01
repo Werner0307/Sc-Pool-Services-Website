@@ -1,0 +1,64 @@
+.services {
+  padding: 6rem;
+
+  gap: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+  &__content {
+    flex: 1;
+    h2 {
+      color: $white-color;
+      font-size: clamp(2rem, 3vw, 3rem);
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      span {
+        font-family: "Lobster";
+        letter-spacing: 0;
+        font-size: clamp(5rem, 6vw, 10rem);
+        color: $tertiary-color;
+      }
+    }
+    p {
+      color: $white-color;
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      width: 60%;
+      margin-block-start: 2rem;
+    }
+  }
+
+  &__cta {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+    background-color: $tertiary-color;
+    padding: 1em 2em;
+    border-radius: 5rem;
+    cursor: pointer;
+    margin-block-start: 6rem;
+  }
+
+  &__icons {
+    flex: 1;
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+  }
+
+  &__containers {
+    flex: 30%;
+    background-color: $tertiary-color;
+    border-radius: 2rem;
+    padding: 3em;
+    text-align: center;
+    img {
+    }
+
+    h3 {
+      font-size: clamp(1.3rem, 1vw, 1.6rem);
+      text-transform: capitalize;
+    }
+  }
+}

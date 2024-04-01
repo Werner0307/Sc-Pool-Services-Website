@@ -17,6 +17,11 @@ body {
   box-sizing: border-box;
 }
 
+@media (max-width: 900px) {
+  .services {
+    flex-direction: column;
+  }
+}
 body {
   background-color: lightblue;
 }
@@ -131,6 +136,108 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg);
+}
+
+.services {
+  padding: 6rem;
+  gap: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1c2d5a;
+}
+.services__content {
+  flex: 1;
+}
+.services__content h2 {
+  color: #fff;
+  font-size: clamp(2rem, 3vw, 3rem);
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+.services__content h2 span {
+  font-family: "Lobster";
+  letter-spacing: 0;
+  font-size: clamp(5rem, 6vw, 10rem);
+  color: #dfed3c;
+}
+.services__content p {
+  color: #fff;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  width: 60%;
+  margin-block-start: 2rem;
+}
+.services__cta {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #dfed3c;
+  padding: 1em 2em;
+  border-radius: 5rem;
+  cursor: pointer;
+  margin-block-start: 6rem;
+}
+.services__icons {
+  flex: 1;
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+}
+.services__containers {
+  flex: 30%;
+  background-color: #dfed3c;
+  border-radius: 2rem;
+  padding: 3em;
+  text-align: center;
+}
+.services__containers h3 {
+  font-size: clamp(1.3rem, 1vw, 1.6rem);
+  text-transform: capitalize;
+}
+
+.hero {
+  height: 100svh;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.hero__back-video {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+.hero__content {
+  color: #fff;
+  padding: clamp(4rem, 5vw, 6rem);
+}
+.hero__content h1 {
+  font-size: clamp(4rem, 5vw, 7rem);
+  text-transform: uppercase;
+}
+.hero__content p {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-block-start: 6rem;
+}
+.hero__content p span {
+  color: #dfed3c;
+}
+.hero__content--tilt {
+  transform: rotate(-10deg);
+}
+.hero__content--tilt span {
+  font-family: "Lobster";
+  font-size: clamp(8rem, 9vw, 13rem);
+  line-height: 1;
+  text-transform: capitalize;
+  color: #dfed3c;
 }
 
 /*# sourceMappingURL=styles.css.map */
