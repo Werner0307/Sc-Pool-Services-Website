@@ -196,6 +196,24 @@ body {
   text-transform: capitalize;
 }
 
+.stand-out {
+  background-color: #1e449a;
+  color: #fff;
+  text-align: center;
+}
+.stand-out h2 {
+  text-transform: capitalize;
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 2px;
+}
+.stand-out h2 span {
+  font-family: "Lobster";
+  letter-spacing: 0;
+  font-size: clamp(5rem, 6vw, 7rem);
+  color: #dfed3c;
+  line-height: 1;
+}
+
 .hero {
   height: 100svh;
   background-color: rgba(0, 0, 0, 0.1);

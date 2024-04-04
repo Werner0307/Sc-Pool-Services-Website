@@ -1,0 +1,19 @@
+.stand-out {
+  background-color: $secondary-color;
+  color: $white-color;
+  text-align: center;
+
+  h2 {
+    text-transform: capitalize;
+    font-size: clamp(2rem, 3vw, 3rem);
+    letter-spacing: 2px;
+
+    span {
+      font-family: "Lobster";
+      letter-spacing: 0;
+      font-size: clamp(5rem, 6vw, 7rem);
+      color: $tertiary-color;
+      line-height: 1;
+    }
+  }
+}
