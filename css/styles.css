@@ -196,22 +196,62 @@ body {
   text-transform: capitalize;
 }
 
-.stand-out {
+.stand {
   background-color: #1e449a;
   color: #fff;
   text-align: center;
 }
-.stand-out h2 {
+.stand h2 {
   text-transform: capitalize;
   font-size: clamp(2rem, 3vw, 3rem);
   letter-spacing: 2px;
 }
-.stand-out h2 span {
+.stand h2 span {
   font-family: "Lobster";
   letter-spacing: 0;
   font-size: clamp(5rem, 6vw, 7rem);
   color: #dfed3c;
   line-height: 1;
+}
+
+.stand-out {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(650px, 100%), 1fr));
+  gap: 3rem;
+}
+.stand-out__info--heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: clamp(7rem, 12vw, 18rem);
+}
+.stand-out__info--heading h3 {
+  font-family: "Kalam";
+  font-size: clamp(2rem, 2vw, 2.7rem);
+  color: #dfed3c;
+  margin-inline-end: 2rem;
+}
+.stand-out__text p {
+  margin-inline: clamp(7rem, 12vw, 18rem);
+  text-align: left;
+  width: 50%;
+  font-size: clamp(1.2rem, 1.5vw, 1.8rem);
+}
+.stand-out__image {
+  display: grid;
+  grid-template-areas: "net test-kit test-kit" "shop test-kit test-kit";
+  place-items: center;
+  gap: clamp(1rem, 2vw, 3rem);
+  padding: 3rem;
+}
+.stand-out__image--1 {
+  grid-area: net;
+}
+.stand-out__image--2 {
+  grid-area: test-kit;
+}
+.stand-out__image--3 {
+  grid-area: shop;
 }
 
 .hero {
