@@ -1,0 +1,52 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  padding: 5em;
+  gap: 3rem;
+  background-color: $primary-color;
+  place-items: center;
+  &__navigation {
+    img {
+    }
+
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            font-family: "Anybody";
+            color: $white-color;
+            font-size: clamp(1.5rem, 2vw, 2rem);
+            margin-inline-end: clamp(2rem, 3vw, 4rem);
+            transition: color 0.2s ease-in;
+
+            &:hover {
+              color: $tertiary-color;
+            }
+          }
+        }
+      }
+    }
+
+    &__social {
+      &--icons {
+        text-align: right;
+        a {
+        }
+      }
+    }
+  }
+  &__credits {
+    color: $white-color;
+    font-size: clamp(1.2rem, 1vw, 1.6rem);
+    span {
+      a {
+        text-decoration: none;
+        color: $tertiary-color;
+      }
+    }
+  }
+}

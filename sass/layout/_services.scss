@@ -38,6 +38,11 @@
     border-radius: 5rem;
     cursor: pointer;
     margin-block-start: 6rem;
+
+    a {
+      text-decoration: none;
+      color: $black-color;
+    }
   }
 
   &__icons {

@@ -1,0 +1,30 @@
+.about-us {
+  background-image: url(../Assets/Images/Sc\ Pool\ Services\ About\ Us\ Hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.our-story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  background-color: $secondary-color;
+  padding: 5em;
+  place-items: center;
+
+  &__paragraph {
+    h2 {
+      font-family: "Lobster";
+      letter-spacing: 0;
+      font-size: clamp(5rem, 6vw, 10rem);
+      color: $tertiary-color;
+    }
+
+    p {
+      color: $white-color;
+      font-size: clamp(1.2rem, 2vw, 2rem);
+      width: 80%;
+      margin-block-start: 2rem;
+    }
+  }
+}

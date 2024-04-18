@@ -39,13 +39,13 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Home</a>
+            <a href="index.html" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">About</a>
+            <a href="Pages/about.html" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Services</a>
+            <a href="Pages/services.html" class="navigation__link">Services</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Gallery</a>
@@ -88,7 +88,7 @@
           SC Pool Services has a wide range of services to offer. making sure
           that our customers pools stay perfectly blue all year round!
         </p>
-        <button class="services__cta">View All</button>
+        <a href="Pages/about.html"><button class="services__cta">View All</button></a>
       </div>
       <div class="services__icons">
         <div class="services__containers">
@@ -139,11 +139,11 @@
       <div class="stand-out">
         <div class="stand-out__info">
           <div class="stand-out__text">
-            <div class="stand-out__info--heading" data-tab-target="exeptional">
+            <div class="stand-out__info--heading" data-tab-target="#exeptional">
               <h3>Exceptional Customer Service:</h3>
               <img src="Assets/Icons/Expand Arrow.png" alt="Expand Arrow" />
             </div>
-            <p id="exeptional">
+            <p id="exeptional" data-tab-content>
               Your company may distinguish itself by prioritizing customer
               satisfaction above all else. This could entail offering
               personalized service, promptly addressing any concerns or issues,
@@ -152,11 +152,11 @@
           </div>
 
           <div class="stand-out__text">
-            <div class="stand-out__info--heading" data-tab-target="quality">
+            <div class="stand-out__info--heading" data-tab-target="#quality">
               <h3>Quality Workmanship:</h3>
               <img src="Assets/Icons/Expand Arrow.png" alt="Expand Arrow" />
             </div>
-            <p id="quality">
+            <p id="quality" data-tab-content>
               Highlighting the expertise and skill of your team can be a
               significant factor in standing out. If your company employs highly
               trained professionals who are knowledgeable about swimming pool
@@ -168,11 +168,11 @@
           </div>
 
           <div class="stand-out__text">
-            <div class="stand-out__info--heading" data-tab-target="customized">
+            <div class="stand-out__info--heading" data-tab-target="#customized">
               <h3>Customized Solutions:</h3>
               <img src="Assets/Icons/Expand Arrow.png" alt="Expand Arrow" />
             </div>
-            <p id="customized">
+            <p id="customized" data-tab-content>
               Offering tailor-made solutions to meet the unique needs and
               preferences of each customer can be a significant differentiator.
               Whether it's designing bespoke pool features, creating
@@ -183,11 +183,11 @@
           </div>
 
           <div class="stand-out__text">
-            <div class="stand-out__info--heading" data-tab-target="prompt">
+            <div class="stand-out__info--heading" data-tab-target="#prompt">
               <h3>Prompt and Reliable Response:</h3>
               <img src="Assets/Icons/Expand Arrow.png" alt="Expand Arrow" />
             </div>
-            <p id="prompt">
+            <p id="prompt" data-tab-content>
               Consistently delivering prompt and reliable service can be a
               significant differentiator in the competitive swimming pool
               services industry. This means responding promptly to inquiries,
@@ -197,6 +197,7 @@
           </div>
         </div>
 
+        <div class="">
         <div class="stand-out__image">
           <img
             src="Assets/Images/Sc Pool Services Image-3.jpg"
@@ -216,5 +217,29 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer__navigation">
+        <img src="Assets/Images/Sc Pool Services Footer Logo.png" alt="Sc Pool Services Logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Pages/about.html">About</a></li>
+            <li><a href="Pages/services.html">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__social">
+        <div class="footer__social--icons">
+        <a href="#"><img src="Assets/Icons/Facebook.png" alt="Sc Pool Services Facebook"></a>
+        <a href="#"><img src="Assets/Icons/Instagram Circle.png" alt="Sc Pool Services Instagram"></a>
+      </div>
+      <div class="footer__credits">
+        <p>&copy;SC Pool Services 2024 | Designed and Developed by <span><a href="#">Creative Concepts</a></span></p>
+      </div>
+      </div>
+    </footer>
   </body>
 </html>

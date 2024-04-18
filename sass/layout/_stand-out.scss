@@ -19,6 +19,7 @@
 }
 
 .stand-out {
+  margin-block-start: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(650px, 100%), 1fr));
 
@@ -29,6 +30,9 @@
       justify-content: space-between;
       align-items: center;
       padding-inline: clamp(7rem, 12vw, 18rem);
+      cursor: pointer;
+      text-align: left;
+      margin-block-end: 2rem;
       h3 {
         font-family: "Kalam";
         font-size: clamp(2rem, 2vw, 2.7rem);
@@ -58,6 +62,7 @@
     place-items: center;
     gap: clamp(1rem, 2vw, 3rem);
     padding: 3rem;
+
     &--1 {
       grid-area: net;
     }

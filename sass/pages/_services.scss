@@ -1,0 +1,34 @@
+.services-hero {
+  background-image: url(../Assets/Images/Sc\ Pool\ Services\ Services\ Hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services__group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 5rem;
+  padding: 5em;
+  background-image: url(../Assets/Images/Sc\ Pool\ Services-Services\ BG\ Image.jpg);
+
+  div {
+    background-color: $tertiary-color;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+
+    h2 {
+      text-transform: capitalize;
+      font-size: clamp(1.6rem, 1vw, 2rem);
+      margin-block: 2rem;
+    }
+
+    p {
+      font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    }
+  }
+}

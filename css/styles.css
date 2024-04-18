@@ -17,13 +17,86 @@ body {
   box-sizing: border-box;
 }
 
+img,
+picture {
+  max-width: 100%;
+}
+
 @media (max-width: 900px) {
   .services {
     flex-direction: column;
   }
 }
+@media (max-width: 1100px) {
+  .our-story__paragraph {
+    text-align: center;
+  }
+  .our-story__paragraph p {
+    margin-block-end: 4rem;
+    width: 100% !important;
+  }
+}
 body {
   background-color: lightblue;
+}
+
+.about-us {
+  background-image: url(../Assets/Images/Sc\ Pool\ Services\ About\ Us\ Hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.our-story {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  background-color: #1e449a;
+  padding: 5em;
+  place-items: center;
+}
+.our-story__paragraph h2 {
+  font-family: "Lobster";
+  letter-spacing: 0;
+  font-size: clamp(5rem, 6vw, 10rem);
+  color: #dfed3c;
+}
+.our-story__paragraph p {
+  color: #fff;
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  width: 80%;
+  margin-block-start: 2rem;
+}
+
+.services-hero {
+  background-image: url(../Assets/Images/Sc\ Pool\ Services\ Services\ Hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services__group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 5rem;
+  padding: 5em;
+  background-image: url(../Assets/Images/Sc\ Pool\ Services-Services\ BG\ Image.jpg);
+}
+.services__group div {
+  background-color: #dfed3c;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+.services__group div h2 {
+  text-transform: capitalize;
+  font-size: clamp(1.6rem, 1vw, 2rem);
+  margin-block: 2rem;
+}
+.services__group div p {
+  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
 .navigation__checkbox {
@@ -178,6 +251,10 @@ body {
   cursor: pointer;
   margin-block-start: 6rem;
 }
+.services__cta a {
+  text-decoration: none;
+  color: #000;
+}
 .services__icons {
   flex: 1;
   display: flex;
@@ -215,6 +292,7 @@ body {
 }
 
 .stand-out {
+  margin-block-start: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(650px, 100%), 1fr));
   gap: 3rem;
@@ -224,6 +302,9 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-inline: clamp(7rem, 12vw, 18rem);
+  cursor: pointer;
+  text-align: left;
+  margin-block-end: 2rem;
 }
 .stand-out__info--heading h3 {
   font-family: "Kalam";
@@ -252,6 +333,19 @@ body {
 }
 .stand-out__image--3 {
   grid-area: shop;
+}
+
+.page-hero {
+  min-height: 80svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.page-hero h1 {
+  font-size: clamp(10rem, 10vw, 18rem);
+  font-family: "Lobster";
+  color: #dfed3c;
+  transform: rotate(-10deg);
 }
 
 .hero {
@@ -295,6 +389,51 @@ body {
   font-size: clamp(8rem, 9vw, 13rem);
   line-height: 1;
   text-transform: capitalize;
+  color: #dfed3c;
+}
+
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  padding: 5em;
+  gap: 3rem;
+  background-color: #1c2d5a;
+  place-items: center;
+}
+.footer__navigation nav ul {
+  display: flex;
+}
+.footer__navigation nav ul li {
+  list-style: none;
+}
+.footer__navigation nav ul li a {
+  text-decoration: none;
+  font-family: "Anybody";
+  color: #fff;
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-inline-end: clamp(2rem, 3vw, 4rem);
+  transition: color 0.2s ease-in;
+}
+.footer__navigation nav ul li a:hover {
+  color: #dfed3c;
+}
+.footer__navigation__social--icons {
+  text-align: right;
+}
+.footer__credits {
+  color: #fff;
+  font-size: clamp(1.2rem, 1vw, 1.6rem);
+}
+.footer__credits span a {
+  text-decoration: none;
   color: #dfed3c;
 }
 

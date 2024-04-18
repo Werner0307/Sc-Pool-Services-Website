@@ -3,3 +3,13 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 1100px) {
+  .our-story__paragraph {
+    text-align: center;
+    p {
+      margin-block-end: 4rem;
+      width: 100% !important;
+    }
+  }
+}
