@@ -99,6 +99,13 @@ body {
   font-size: clamp(1.2rem, 1.5vw, 1.5rem);
 }
 
+.contact-hero {
+  background-image: url(../Assets/Images/Sc\ Pool\ Services\ Contact\ Hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .navigation__checkbox {
   display: none;
 }

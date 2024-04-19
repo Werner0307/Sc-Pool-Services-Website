@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sc Pool Services | About Us</title>
+    <title>Sc Pool Services | Contact</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +24,37 @@
       src="https://kit.fontawesome.com/c3e98cc0ec.js"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "nkzRPmtpJZkOQwThj",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            // these IDs from the previous steps
+            emailjs.sendForm("contact_service", "contact_form", this).then(
+              () => {
+                alert("Your Email has been sent successfully");
+              },
+              (error) => {
+                alert("FAILED...", error);
+              }
+            );
+          });
+      };
+    </script>
     <script defer src="../Scripts/script.js"></script>
   </head>
   <body>
@@ -42,42 +73,50 @@
             <a href="../index.html" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="about.html" class="navigation__link">About</a>
+            <a href="Pages/about.html" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href="services.html" class="navigation__link">Services</a>
+            <a href="#" class="navigation__link">Services</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Gallery</a>
           </li>
           <li class="navigation__item">
-            <a href="contact.html" class="navigation__link">Contact</a>
+            <a href="#" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
     </div>
 
-    <div class="page-hero about-us">
-      <h1>About Us</h1>
+    <div class="page-hero contact-hero">
+      <h1>Contact</h1>
     </div>
 
-    <section class="our-story">
-      <div class="our-story__paragraph">
-        <h2>our story</h2>
-        <p>
-          SC Pool Services has a wide range of services to offer. making sure
-          that our customers pools stayperfectly blue all year round!SC Pool
-          Services has a wide ranof services to offer. making sure that our
-          customers pools stayperfectly blue all year round!
-        </p>
+    <section class="contact">
+      <div class="contact__form">
+        <form id="contact-form">
+          <!-- To simplify the tutorial, the value is static. -->
+          <label>Contact Number</label>
+          <input type="text" name="contact_number" value="" />
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message"></textarea>
+          <input type="submit" value="Send" />
+        </form>
       </div>
-      <div class="our-story__img">
-        <div class="">
-          <img
-            src="../Assets/Images/About Us Shop.png"
-            alt="Sc Pool Services Shop"
-          />
-        </div>
+
+      <div class="contact__info">
+        <h2>Get in Touch</h2>
+        <p>
+          If you have any questions about our services feel free to get in
+          contact with us
+        </p>
+        <p>Cell: 076 777 0078</p>
+        <p>Email: admin@scpoolservices.co.za</p>
+        <p>Adress: admin@scpoolservices.co.za</p>
       </div>
     </section>
 
@@ -90,9 +129,9 @@
         <nav>
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="Pages/about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </div>
