@@ -4,3 +4,34 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  padding-block: clamp(4rem, 5vw, 10rem);
+  background-color: $secondary-color;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      color: $tertiary-color;
+      font-family: "Lobster";
+      font-size: clamp(5rem, 8vw, 12rem);
+      line-height: 1;
+      margin-block-start: -5rem;
+    }
+
+    p {
+      color: $white-color;
+      font-family: "Anybody";
+      font-weight: bold;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-block-end: 1rem;
+    }
+  }
+}

@@ -106,6 +106,34 @@ body {
   background-repeat: no-repeat;
 }
 
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(50rem, 100%), 1fr));
+  padding-block: clamp(4rem, 5vw, 10rem);
+  background-color: #1e449a;
+}
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact__info h2 {
+  color: #dfed3c;
+  font-family: "Lobster";
+  font-size: clamp(5rem, 8vw, 12rem);
+  line-height: 1;
+  margin-block-start: -5rem;
+}
+.contact__info p {
+  color: #fff;
+  font-family: "Anybody";
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-block-end: 1rem;
+}
+
 .navigation__checkbox {
   display: none;
 }
@@ -442,6 +470,40 @@ body {
 .footer__credits span a {
   text-decoration: none;
   color: #dfed3c;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: clamp(4rem, 5vw, 10rem);
+}
+#contact-form .submit {
+  width: 25%;
+  background-color: #fff;
+  color: #1e449a;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+#contact-form input,
+#contact-form textarea {
+  outline: none;
+  border: none;
+  padding: clamp(1rem, 1vw, 2rem);
+  background: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  font-family: "Anybody";
+  font-weight: bold;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+  margin-block-end: 2rem;
+}
+#contact-form input::placeholder,
+#contact-form textarea::placeholder {
+  color: #fff;
+  font-family: "Anybody";
+  font-weight: bold;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
 }
 
 /*# sourceMappingURL=styles.css.map */

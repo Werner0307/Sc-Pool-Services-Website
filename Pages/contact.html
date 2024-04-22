@@ -39,6 +39,7 @@
     </script>
     <script type="text/javascript">
       window.onload = function () {
+        //
         document
           .getElementById("contact-form")
           .addEventListener("submit", function (event) {
@@ -49,7 +50,7 @@
                 alert("Your Email has been sent successfully");
               },
               (error) => {
-                alert("FAILED...", error);
+                alert("Your Email has failed to be sent!", error);
               }
             );
           });
@@ -73,16 +74,16 @@
             <a href="../index.html" class="navigation__link">Home</a>
           </li>
           <li class="navigation__item">
-            <a href="Pages/about.html" class="navigation__link">About</a>
+            <a href="about.html" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Services</a>
+            <a href="services.html" class="navigation__link">Services</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Gallery</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Contact</a>
+            <a href="contact.html" class="navigation__link">Contact</a>
           </li>
         </ul>
       </nav>
@@ -96,23 +97,36 @@
       <div class="contact__form">
         <form id="contact-form">
           <!-- To simplify the tutorial, the value is static. -->
-          <label>Contact Number</label>
-          <input type="text" name="contact_number" value="" />
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message"></textarea>
-          <input type="submit" value="Send" />
+          <!-- <label>Contact Number</label>
+          <input type="text" name="contact_number" value="" /> -->
+          <!-- <label>Name</label> -->
+          <input
+            type="text"
+            name="user_name"
+            placeholder="Your Name"
+            required
+          />
+          <!-- <label>Email</label> -->
+          <input
+            type="email"
+            name="user_email"
+            placeholder="Your Email"
+            required
+          />
+          <!-- <label>Message</label> -->
+          <textarea name="message" placeholder="Your Message"></textarea>
+          <input type="submit" value="Send" class="submit" />
         </form>
       </div>
 
       <div class="contact__info">
-        <h2>Get in Touch</h2>
+        <h2>
+          Get in<br />
+          Touch
+        </h2>
         <p>
-          If you have any questions about our services feel free to get in
-          contact with us
+          If you have any questions about our services<br />
+          feel free to get in contact with us
         </p>
         <p>Cell: 076 777 0078</p>
         <p>Email: admin@scpoolservices.co.za</p>
@@ -129,9 +143,9 @@
         <nav>
           <ul>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="Pages/about.html">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
