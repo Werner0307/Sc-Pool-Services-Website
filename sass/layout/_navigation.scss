@@ -1,3 +1,13 @@
+.logo-container {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: clamp(20rem, 30vw, 40rem);
+}
+
+.logo {
+}
+
 .navigation {
   &__checkbox {
     display: none;

@@ -134,6 +134,13 @@ body {
   margin-block-end: 1rem;
 }
 
+.logo-container {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  width: clamp(20rem, 30vw, 40rem);
+}
+
 .navigation__checkbox {
   display: none;
 }
