@@ -96,7 +96,8 @@ body {
   margin-block: 2rem;
 }
 .services__group div p {
-  font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.6rem);
+  text-align: center;
 }
 
 .contact-hero {
@@ -408,6 +409,7 @@ body {
 .hero__content {
   color: #fff;
   padding: clamp(4rem, 5vw, 6rem);
+  margin-block-start: 5rem;
 }
 .hero__content h1 {
   font-size: clamp(4rem, 5vw, 7rem);
@@ -417,6 +419,7 @@ body {
   font-size: clamp(1.5rem, 2vw, 2rem);
   text-transform: uppercase;
   font-weight: bold;
+  text-align: right;
   letter-spacing: 2px;
   margin-block-start: 6rem;
 }
@@ -504,6 +507,7 @@ body {
   font-weight: bold;
   font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   margin-block-end: 2rem;
+  transition: all 0.3s ease-in;
 }
 #contact-form input::placeholder,
 #contact-form textarea::placeholder {
@@ -511,6 +515,10 @@ body {
   font-family: "Anybody";
   font-weight: bold;
   font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-bottom: 4px solid #dfed3c;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -26,11 +26,16 @@
     font-size: clamp(1.4rem, 1.5vw, 1.6rem);
     margin-block-end: 2rem;
 
+    transition: all 0.3s ease-in;
+
     &::placeholder {
       color: $white-color;
       font-family: "Anybody";
       font-weight: bold;
       font-size: clamp(1.4rem, 1.5vw, 1.6rem);
+    }
+    &:focus {
+      border-bottom: 4px solid $tertiary-color;
     }
   }
 }
