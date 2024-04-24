@@ -36,6 +36,11 @@ picture {
     width: 100% !important;
   }
 }
+@media (max-width: 1000px) {
+  .contact__info h2 {
+    margin-top: 5rem;
+  }
+}
 body {
   background-color: lightblue;
 }
@@ -125,6 +130,7 @@ body {
   font-size: clamp(5rem, 8vw, 12rem);
   line-height: 1;
   margin-block-start: -5rem;
+  margin-block-end: 3rem;
 }
 .contact__info p {
   color: #fff;
@@ -260,7 +266,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #1c2d5a;
+  background-image: url(../Assets/Images/Sc\ Pool\ Services-Services\ BG\ Image.jpg);
 }
 .services__content {
   flex: 1;
@@ -320,6 +326,7 @@ body {
   background-color: #1e449a;
   color: #fff;
   text-align: center;
+  padding-block: 5rem;
 }
 .stand h2 {
   text-transform: capitalize;
